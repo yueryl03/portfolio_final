@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <title>Yueryl's protfolio MUSIC </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <!--THIS IS THE NAVIGATION BAR-->
+      <ul class="menu">
+        <a href="index.html"> <li style="color:black;">HOME</li></a>
+        <a href="ABOUT.html"><li style="color:black;">ABOUT</li></a>
+        <a href="PHOTOS & VIDEOS.html"><li style="color:black;">PHOTOS</li></a>
+        <a href="MUSIC.html"><li style="color:gray;">MUSIC</li></a>
+        <a href="https://www.youtube.com/channel/UCHtaiNYRhakWccgeY9cXgLw?view_as=subscriber"><li style="color:black;">YOUTUBE</li></a>
+        <a href="https://www.instagram.com/yueryl/"><li style="color:black;">INSTAGRAM</li></a>
+
+      </ul>
+      <a href="https://www.youtube.com/channel/UCHtaiNYRhakWccgeY9cXgLw?view_as=subscriber" class="fa fa-youtube"></a>
+      <a href="https://www.instagram.com/yueryl/" class="fa fa-instagram"></a>
+
+      <h2>Songs composed by myself</h2>
+
+<button class="accordion">Time Heals All Wounds</button>
+
+<div class="panel">
+  <p>This is the piano song that I composed in April, 2019. The style of the song is according to Chinese traditional music.
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext" style="color: black;">1 / 3</div>
+<img src="https://1.bp.blogspot.com/-uiE_6_EiGTA/XYmOHJdqM5I/AAAAAAAAAGE/L5XaI-07Ej8ivEr9-Hdtd05pM_WyOXT7QCEwYBhgL/s640/%25E5%258F%25A4%25E9%25A2%25A8%2B%25E7%25B7%25B4%25E7%25BF%2592-1.png" alt="https://1.bp.blogspot.com" style="width:100%">
+<div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext" style="color: black;">2 / 3</div>
+<img src="https://1.bp.blogspot.com/-Pjjo4XPDjQY/XYmOHJg81nI/AAAAAAAAAGE/R88lN406uSk8DgSE5YuC-Qpu079wGWkqQCEwYBhgL/s640/%25E5%258F%25A4%25E9%25A2%25A8%2B%25E7%25B7%25B4%25E7%25BF%2592-2.png" alt="https://1.bp.blogspot.com" style="width:100%">
+<div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext" style="color: black;">3 / 3</div>
+<img src= "https://1.bp.blogspot.com/-kE8rip_gdlo/XYmOHLWBCnI/AAAAAAAAAGA/snkhSbLnz24IdimSeloJm5hvzJKB4osyQCEwYBhgL/s640/%25E5%258F%25A4%25E9%25A2%25A8%2B%25E7%25B7%25B4%25E7%25BF%2592-3.png" alt="https://1.bp.blogspot.com" style="width:100%">
+<div class="text">3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</p>
+<!--Ｉ　ｃｏｐｉｅｄ　ｓｃｒｉｐｔ　ｏｎ　ｗｅｂ-->
+
+
+</div>
+
+
+<button class="accordion">Variation 1.0</button>
+<div class="panel">
+  <p>This is the piano song that I composed in 2019 also. The style of the song just random come up in my head.
+    </p>
+<img src="https://1.bp.blogspot.com/-96v-NAJuhSU/XYmQpSMC1wI/AAAAAAAAAGM/p-kSEsx3nrEMK2RflvVFQsGKmTpMd8T9wCLcBGAsYHQ/s640/%25E8%25AE%258A%25E7%2595%25B001-1.png" alt="https://1.bp.blogspot.com" style="width:80%">
+</div>
+
+
+<button class="accordion">Variation 2.0</button>
+<div class="panel">
+  <p>According to the last song, this song is the 2.0 of it which also has the random style.</p>
+<img src="https://1.bp.blogspot.com/-WbiM4npFEao/XYmYczfXaGI/AAAAAAAAAGY/I-GCN8QzW4AXtS8STGB6YZPEwE7GC48gQCLcBGAsYHQ/s640/%25E8%25AE%258A%25E7%2595%25B002-1.png" alt="https://1.bp.blogspot.com" style="width:80%">
+    </div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+  </body>
+</html>
